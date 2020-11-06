@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--The <head> tag here contains the following elements: <title>, <meta>, <link>, <script>-->
+<!--The <head> element is a container for metadata i.e data about data -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="calculator_design.css">
+    <title>Tip Calculator</title>
+</head>
+<!--The <body> tag defines our document's body and contains all the content of our program-->
+<body>
+<!-- Here h1 is our header tag that will give our project heading on the page-->    
+    <h1>Tip Calculator</h1>
+<!--We used The <div> tag as a container for HTML elements - which is styled with calculator_design.css and manipulated with calculator.js-->
+    <div id="calculator">
+<!--Here we provided input type as number for our Bill textbox , any number upto any decimal unit is allowed -->
+        Bill : <input id="bill" type="number">
+<!--Here we provided input type as number for our Tip% textbox , any number upto any decimal unit is allowed --> 
+        Tip %: <input id="tip-percent" type="number">
+<!--Here we provided input type as number for our Number of people textbox -->
+<!--Here only digits [0-9] are allowed and every other key on the keyboard is blocked with the help of onkeypress-->
+        Number of people: <input id="people" type="number" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+<!--Here we provided input type as number for our tipperperson textbox and make it Non-editable by user-->
+        Tip per person: <input id="tipperperson" type="number" readonly>
+<!--Here we provided input type as number for our totalperperson textbox and make it Non-editable by user-->
+        Total per person: <input id="totalperperson" type="number" readonly>
+<!--The <button> tag here defines a clickable button named Calculate -->
+        <button id="button">Calculate</button>
+    </div>
+<!--This points to our JavaScript file calculator.js-->
+    <script src="calculator.js"></script>
+</body>
+</html>

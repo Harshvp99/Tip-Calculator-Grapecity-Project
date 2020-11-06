@@ -1,0 +1,60 @@
+/* Here we first set the background color and height of our page */
+html{
+    background-color: #ffffff;
+    height: 100%;}
+/* Here we provide color , font , and text-allignment for our Header Tip calculator */
+h1 {
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;}
+/* Here is the design center of our calculator giving it's height , width , background color , display type , grid configurations */
+/* We also set up margin , border and padding for our calculator */     
+#calculator {
+    height: 425px;
+    width: 450px;
+    background-color: #fffffe;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    grid-template-rows: 80px 80px 80px 80px 80px ;
+    /* Here we give element for every 5 grids line by line as it will show in the calculator */
+    grid-template-areas: 
+    ". bill"
+    ". tip-percent"
+    ". people"
+    ". tipperperson"
+    ". totalperperson"
+    "button button";
+    margin: 0 auto;
+    border: 5px solid #0c0b0b;
+    padding: 25px;}
+/* Here we give grid area bill its height and width */
+#bill {
+    grid-area: bill;
+    height: 25px;
+    width: 200px;}
+/* Here we give grid area tip-percent its height and width */
+#tip-percent {
+    grid-area: tip-percent;
+    height: 25px;
+    width: 200px;}
+/* Here we give grid area people its height and width */    
+#people {
+    grid-area: people;
+    height: 25px;
+    width: 200px;}
+/* Here we give grid area tipperperson its height and width */    
+#tipperperson {
+    grid-area: tipperperson;
+    height: 25px;
+    width: 200px;}
+/* Here we give grid area totalperperson its height and width */    
+#totalperperson {
+    grid-area: totalperperson;
+    height: 25px;
+    width: 200px;}
+/* Here we give grid area button its height and auto-width */    
+#button {
+    grid-area: button;
+    height: 40px;
+    width: auto;}
+/* The design of our project is ready */    
